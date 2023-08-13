@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>let learn arrays</h1>
+    <script>
+        //let i make an array
+        let emp={
+            name : "ayush",
+            salary : 100000,
+            job : "data scientist",
+            shareholder : "BlackRock"
+        }
+        console.log(emp);
+        //two methods of representing the array
+        let arr = ["ayush",13,2.43,null,undefined,true,false];
+        let arr1 = new Array("ayush",13,2.43,null,undefined,true,false);
+        console.log(arr);
+        console.log(arr1);
+        //accessing the direct element of the array
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[2]);
+        console.log(arr[3]);
+        console.log(arr[4]);
+        console.log(arr[5]);
+        console.log(arr[6]);
+        console.log(arr[7]);
+        //functions in array
+        arr2 = [4,5,3,4,5,4,6,7,5,99];
+        //finding the length
+        console.log(arr2.length);
+        //sorting the array
+        arr2 = arr2.sort();
+        console.log(arr2);
+        //adding an element to the last in an array
+        arr2.push("this is pushed");
+        console.log(arr2);
+        //accessing the key element by 2 methods
+        console.log(emp.name);
+        console.log(emp['name']);
+        //creating the array of perticular size 21
+        let arr3=new Array(21);
+        console.log(arr3);
+    </script>
+
+</body>
+</html>

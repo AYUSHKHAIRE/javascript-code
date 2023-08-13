@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math object</title>
+</head>
+
+<body>
+    <div class="container">
+        container
+    </div>
+    <script>
+        let a = Math;
+        let b = 56.34;
+        let c = 53.22;
+        console.log(a);
+        console.log("the value of ", Math.E)
+        console.log("the value of ", Math.LN2)
+        console.log("the value of ", Math.LN10)
+        console.log("the value of ", Math.LOG2E)
+        console.log("the value of ", Math.LOG10E)
+        console.log("the value of ", Math.PI)
+        console.log("the value of ", Math.SQRT1_2)
+        console.log("the value of ", Math.SQRT2)
+        console.log("the value of math round", Math.round(b), Math.round(c));
+        console.log("the value of 3 to power 3", Math.pow(3, 3));
+        console.log("the value of square root of 36 is", Math.sqrt(36));
+        console.log("the value of square root of 36 is", Math.sqrt(31));
+        console.log("the value of ceil of b", Math.ceil(b));
+        console.log("the value of floor of b", Math.floor(b));
+        console.log("the value of 4.55 of b", (4.55));
+        console.log("the value of -4.55 of b", Math.abs(4.55));
+        console.log("the value of sin pi/2 is", Math.sin(Math.PI / 2));
+        console.log("the value of cos pi/2 is", Math.cos(Math.PI / 2));
+        console.log("the value of tan pi/2 is", Math.tan(Math.PI / 2));
+        console.log("the value of minimum", Math.min(4, 6, 8));
+        console.log("the value of maximum", Math.max(4, 6, 8));
+        // Generating a random number
+        let r = Math.random();
+        // Random number b/w (a, b) = a + (b-a)*Math.random()
+        let a1 = 50;
+        let b1 = 60;
+        let r50_60 = a1 + (b1 - a1) * Math.random();
+        console.log("The random number is ", r)
+        console.log("The random number is ", r50_60)
+    </script>
+</body>
+
+</html>

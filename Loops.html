@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learning loops</title>
+</head>
+
+<body>
+    <h1>learn loops</h1>
+    <script>
+        //for loop
+        for (let i = 0; i < 3; i++) {
+            console.log(i);
+        }
+        // to itrate an element
+        //array implimentation
+        friends = ["a", "b", "c", "d", "e"]
+        for (let i = 0; i < friends.length; i++) {
+            console.log("Hello " + friends[i]);
+        }
+        // shortcut for array
+        // foreach
+        friends.forEach(function f(element) {
+            console.log("Hello friend " + element + " welcome to modern javascript");
+        })
+        //short easy syntex
+        //forof
+        for (element of friends) {
+            console.log("Hello friend " + element + " welcome to modern javascript");
+        }
+        // to itratete an object
+        let webdeveloper = {
+            name: "ayush",
+            salary: 100000,
+            collage: "IIITN"
+        }
+        for (key in webdeveloper) {
+            console.log(`the web developer has ${key} ${webdeveloper[key]}`);
+        }
+
+        //while loop in js
+        let j=0;
+        while(j<10)
+        {
+            console.log(j);
+            j++;
+        }
+
+        //do while loop
+        let k=20;
+        do{
+            console.log(k);
+            k++;
+        }while(k<30);
+    </script>
+</body>
+
+</html>

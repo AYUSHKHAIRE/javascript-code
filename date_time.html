@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>date and time</title>
+  </head>
+  <body>
+    <h1>current time is <span id="time"></span></h1>
+    <script>
+      // date and time
+      console.log("this is date and time tautorial");
+      let dt = new Date();
+      console.log(dt);
+      // refrence time
+      let dt1 = new Date(0);
+      console.log(dt1);
+      let dt2 = new Date("2029-03-04");
+      console.log(dt2);
+      // date format : Year  Month  date  hour  minute  second  millisecond
+      // constructor
+      let dt3 = new Date(2020, 12, 29, 10, 20, 30, 40);
+      console.log(dt3);
+      // functions
+      let yr = dt2.getFullYear();
+      let mh = dt2.getMonth();
+      let dy = dt2.getDay();
+      let hr = dt2.getHours();
+      let me = dt2.getMinutes();
+      let sc = dt2.getSeconds();
+      let ms = dt2.getMilliseconds();
+      let sdt = dt1.setDate(32);
+      //ser is for each and every function
+      console.log(" the year is " + yr);
+      console.log(" the month is " + mh);
+      console.log(" the day is " + dy);
+      console.log(" the hour is " + hr);
+      console.log(" the minute is " + me);
+      console.log(" the secomd is " + sc);
+      console.log(" the millisecond is " + ms);
+      console.log(" the setted date is " + sdt);
+      let datenow = Date.now();
+      console.log(datenow);
+      //application
+      setInterval(updatetime, 1000);
+      function updatetime() {
+        time.innerHTML = new Date();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events in js</title>
+    <style>
+        #btn {
+            padding: 10px 14px;
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <h1>this is for events</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia blanditiis suscipit quos earum vero,
+            nesciunt
+            saepe assumenda repudiandae ratione repellat. Minima inventore quos obcaecati voluptate autem! Molestias
+            illum nam est nisi totam debitis laudantium ullam, sunt rem accusamus adipisci velit eaque! Earum,
+            quibusdam! Harum.</p>
+        <button id="btn" onclick="togglehide()">show/hide</button>
+        <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDV6VVIzazdZNWw5Z3JmVmJTLWZvYnp2UUVSQXxBQ3Jtc0tsdWtsbmhOaHZfZ28wZ3JQYVFzWXJ5Mk45MWhfR2RVS1VzVHNfamdlQ2ZtZlhoclFGYTQzQ2ZRaG13T3F1TEw3ek12eExCTEY5ZEw1cEFfaUZzNWFzcWR6MUctTGMya1pWTW9BVUdacTBfbmY5ekV2dw&q=https%3A%2F%2Fcodewithharry.com%2Fvideos%2Fweb-development-in-hindi-57&v=d4PN2rJD98g" target="_blank">for output</a>
+    </div>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run()
+        {
+            console.log('mouse inside')
+        });
+        para.addEventListener('mouseout', function run()
+        {
+            console.log('mouse outside')
+        });
+        function togglehide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

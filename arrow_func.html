@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow functions</title>
+</head>
+
+<body>
+    <script>
+        //this is a function to call the function 
+        function greet() {
+            console.log("good morning");
+        }
+        greet();
+        // shortcut 
+        let greet1 = () => {
+            console.log("good night");
+            //can be used without brackets
+        }
+        greet1();
+        // timeout
+        setTimeout(() => { console.log("we are inside settimeout") }, 3000);
+        //function for adding 
+        let sum = (a,b) => {return a+b;};
+        console.log(sum(5,4));
+        //shortcut
+        let sum2 = (a,b) => (a+b);
+        console.log(sum2(5,4));
+        //now let in certain operation
+        let half = a => a/2;
+        console.log(half(5));
+        //important
+        let obj1 = {
+            greeting : "good morning",
+            names : ["ayush","nikhil","pavan","rohsan"],
+            speak(){
+                this.names.forEach((student) => {console.log( this.greeting + " kookoodookoo " + student)})
+                this.names.forEach((student) => {console.log(" kookoodookoo " + student)})
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+
+</html>

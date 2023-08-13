@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        str = "THIS is a string";
+        console.log(str);
+        //first occurance
+        var position = str.indexOf('is');
+        console.log(position);
+        //last occurance
+        position = str.lastIndexOf('is');
+        console.log(position);
+        // string from  a substring
+        var substr = str.slice(1, 7); // can take negative
+        var substr1 = str.substring(0, 7); // cannot take negative
+        var substr2 = str.substr(1, 7);
+        console.log(substr);
+        console.log(substr1);
+        console.log(substr2);
+        // replacement
+        var repl = str.replace('string', 'ayush');
+        console.log(str);
+        console.log(repl);
+        // uppercase
+        console.log(str.toUpperCase());
+        // Lowercase
+        console.log(str.toLowerCase());
+        // joining the new string
+        newstring = 'the new string';
+        console.log(str.concat(newstring));
+        console.log(str.concat('the new string'));
+        // whitespaces disappearance
+        strwhite = '            this i              s a str        ing          '
+        console.log(strwhite);
+        console.log(strwhite.trim());
+        // indicate the charactor
+        var charat = str.charAt(3);
+        console.log(charat);
+        // return the code of the charactor --> not important
+        var charCodeat = str.charCodeAt(3);
+        console.log(charCodeat);
+        // position detecting
+        console.log(str[5]);
+    </script>
+</body>
+
+</html>

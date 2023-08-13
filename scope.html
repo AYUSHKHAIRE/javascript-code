@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+        }
+        .item{
+            background-color: blue;
+            color: aliceblue;
+            margin :5px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias officiis, fuga laudantium consequuntur placeat dolore quos ipsam reprehenderit sequi provident suscipit adipisci, architecto facere! Debitis excepturi expedita similique aliquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias officiis, fuga laudantium consequuntur placeat dolore quos ipsam reprehenderit sequi provident suscipit adipisci, architecto facere! Debitis excepturi expedita similique aliquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias officiis, fuga laudantium consequuntur placeat dolore quos ipsam reprehenderit sequi provident suscipit adipisci, architecto facere! Debitis excepturi expedita similique aliquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias officiis, fuga laudantium consequuntur placeat dolore quos ipsam reprehenderit sequi provident suscipit adipisci, architecto facere! Debitis excepturi expedita similique aliquam.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora alias officiis, fuga laudantium consequuntur placeat dolore quos ipsam reprehenderit sequi provident suscipit adipisci, architecto facere! Debitis excepturi expedita similique aliquam.</div>
+    </div>
+    <script>
+        // global scope of variable
+        var string1 = "this is first string";
+        //redeclearation
+        string1 = "this is second string";
+        console.log(string1);
+        // use of let function
+        let a = 'u'; // this is only accessible in the block
+        {
+            let a='p';
+            console.log(a);
+        } // this is called a block
+        console.log(a);
+        const b="this canyt be changed";
+        console.log(b);
+    </script>
+</body>
+</html>
+    <!-- use let only  -->

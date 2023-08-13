@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manupaliting dom</title>
+</head>
+<body>
+    <!-- doccument object module  -->
+    <div class="main" id="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>more</li>
+            <li>about us</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="coont">item-1</div>
+    <div class="coont">item-2</div>
+    <div class="coont">item-3</div>
+    <div class="coont">item-4</div>
+    <div class="coont">item-5</div>
+    <div class="coont">item-6</div>
+    <h3>for more info</h3>
+    <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa29NTGxiSmZxMm9ISml6a1ZRTjhPekVQbExMZ3xBQ3Jtc0tuR1lMOEFKdFdKZjlWWUlTUnlfOTZNNm83VTlvRi1sSlRLdEhDZjU5b29MVzdYRUpRY1JTZ2xJS3l3My1BcmJLT3h3TVpoNUFBSThZMEhwQlN0cUpYaHJyYi0zRUJLM2FvQ09KV0lIZV9SLUVJNkNaOA&q=https%3A%2F%2Fcodewithharry.com%2Fvideos%2Fweb-development-in-hindi-56&v=cEWLPtRhiio" target="_blank">More notes for output</a>
+    <script>
+        let container = document.getElementById('container');
+        console.log(container);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let coont = document.getElementsByClassName('coont');
+        console.log(coont);
+        let sel = document.querySelector('.main');
+        console.log(sel);
+        let navli = document.querySelector('#nav>li');
+        console.log(navli);
+        let sel1 = document.querySelectorAll('#nav>li');
+        console.log(sel1);
+    </script>
+</body>
+</html>

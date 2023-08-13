@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set timer</title>
+  </head>
+  <body>
+    <div class="cont">time now <span id="time"></span></div>
+    <script>
+      console.log("this is about timeout");
+      //settimeout only once after timeout
+      //clear timeout multiple after timeout
+      function greet() {
+        console.log("hello good morning");
+      }
+      greet();
+      setTimeout(greet, 5000);
+      //setTimeout(greet(), 5000);
+      function greet1(name, bytext) {
+        console.log("hello good morning" + name + bytext);
+      }
+      greet1();
+      timeout = setTimeout(greet1, 5000, " ayush", " take care");
+      console.log(timeout);
+      //clear timeout
+      clearTimeout(timeout);
+      //setinterval
+      intervalid = setInterval(greet1, 1000, "ayush", "take a cup cofee");
+      clearInterval(intervalid);
+      //application
+      function displaytime() {
+        time = new Date();
+        console.log(time);
+        document.getElementById("time").innerHTML = time;
+      }
+      setInterval(displaytime, 1000);
+    </script>
+  </body>
+</html>

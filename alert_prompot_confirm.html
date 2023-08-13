@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interaction using alert prompt confirm </h1>
+    <script>
+        //alert
+        let a = alert("Save the site carefully");//modal say something before continue on website
+        console.log(a);//undefined return value
+        // doesnt return anything
+        // pompt  
+        let p = prompt("what is your name?","message");
+        console.log(p);//undefined return value
+        // confirm
+        let c=confirm("do you really ewant to stay on this empty site?");
+        console.log(c);// return value in true or false
+        if(c)
+        {
+            console.log("your visit has been recorded");
+        }
+        else{
+            console.log("ok tata bye bye see you");
+        }
+        // quick quiz
+        let pc = prompt("what is your age?","Enter your age");
+        if(pc > 18)
+        {
+            console.log("you can stay on the site");
+        }
+        else{
+            console.log("tum abhi chote bacche ho .. go home");
+        }
+    </script>
+</body>
+</html>

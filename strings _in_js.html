@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings in js</title>
+</head>
+
+<body>
+    <div id="head">
+
+    </div>
+    <h1 id="">Lorem ipsum dolor sit amet consectetur </h1>
+    <div class="cont">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit suscipit quod nam earum incidunt aperiam ullam
+        omnis neque consequuntur? Necessitatibus maiores ad obcaecati.
+    </div>
+    <div id="content"></div>
+    <script>
+        var string = "this";
+        var name = "ayush";
+        var behav = "who has lamborgini";
+        console.log(string);
+        console.log(string + name + behav);
+        var temp = `This ${name} the only boy in nashik ${behav}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(len);
+        console.log(`length of the string name is ${len}`);
+        console.log("hello\t wor\bld \n ayush");
+        document.getElementById('head').innerHTML = '<h3> this is heading h3,</h3>';
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>';
+    </script>
+</body>
+
+</html>
